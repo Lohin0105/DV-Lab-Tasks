@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f16cc920f3fe53aed7c296c01637f62c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f16cc920f3fe53aed7c296c01637f62c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f16cc920f3fe53aed7c296c01637f62c = L.map(
+                "map_f16cc920f3fe53aed7c296c01637f62c",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1f08a2df6d286072140a8983069917b3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1f08a2df6d286072140a8983069917b3.addTo(map_f16cc920f3fe53aed7c296c01637f62c);
+        
+    
+            var circle_marker_ef00268a839f69eec3bf92101abb04a4 = L.circleMarker(
+                [36.7, -119.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.067884406234654, "stroke": true, "weight": 3}
+            ).addTo(map_f16cc920f3fe53aed7c296c01637f62c);
+        
+    
+            circle_marker_ef00268a839f69eec3bf92101abb04a4.bindTooltip(
+                `<div>
+                     California: $457688
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f53e15192e7be82d98b47a9f94dd55e = L.circleMarker(
+                [40.7, -74.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.29430053911468, "stroke": true, "weight": 3}
+            ).addTo(map_f16cc920f3fe53aed7c296c01637f62c);
+        
+    
+            circle_marker_0f53e15192e7be82d98b47a9f94dd55e.bindTooltip(
+                `<div>
+                     New York: $310876
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1502dc6051d82509db0dfbd6be1ce1ee = L.circleMarker(
+                [31.9, -99.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.089318512924038, "stroke": true, "weight": 3}
+            ).addTo(map_f16cc920f3fe53aed7c296c01637f62c);
+        
+    
+            circle_marker_1502dc6051d82509db0dfbd6be1ce1ee.bindTooltip(
+                `<div>
+                     Texas: $170188
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6284172deea8e1cce8722752c5204d0 = L.circleMarker(
+                [27.7, -81.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.803400191484645, "stroke": true, "weight": 3}
+            ).addTo(map_f16cc920f3fe53aed7c296c01637f62c);
+        
+    
+            circle_marker_f6284172deea8e1cce8722752c5204d0.bindTooltip(
+                `<div>
+                     Florida: $89474
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf405dac0f726c431726a259b6d635c7 = L.circleMarker(
+                [40.6, -89.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.583712047403786, "stroke": true, "weight": 3}
+            ).addTo(map_f16cc920f3fe53aed7c296c01637f62c);
+        
+    
+            circle_marker_bf405dac0f726c431726a259b6d635c7.bindTooltip(
+                `<div>
+                     Illinois: $80166
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
